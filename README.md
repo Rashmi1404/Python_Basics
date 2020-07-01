@@ -33,7 +33,7 @@
  bin(512)       # '0b1000000000' -->  binary format
  hex(512)       # '0x200' --> hexadecimal format
 '''
-'''python
+'''javascript
 # Converting Strings to Numbers
 
  age = input("How old are you?")
