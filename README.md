@@ -1,4 +1,4 @@
-# Python_Basics
+## Python_Basics
  You can learn complete basics of Python here
  
  ```python
@@ -51,15 +51,15 @@ type('Hellloooooo') # str
 "\t" # adds a tab
 
 'Hey you!'[4] # y
-name = 'Andrei Neagoie'
-name[4]     # e
-name[:]     # Andrei Neagoie
-name[1:]    # ndrei Neagoie
-name[:1]    # A
-name[-1]    # e
-name[::1]   # Andrei Neagoie
-name[::-1]  # eiogaeN ierdnA
-name[0:10:2]# Ade e
+name = 'Rashmi Bhujbal'
+name[4]     # h
+name[:]     # Rashmi Bhujbal
+name[1:]    # ashmi Bhujbal
+name[:1]    # R
+name[-1]    # m
+name[::1]   # Rashmi Bhujbal
+name[::-1]  # labjuhB imhsaR
+name[0:10:2]# Rsm B
 # : is called slicing and has the format [ start : end : step ]
 
 'Hi there ' + 'Timmy' # 'Hi there Timmy' --> This is called string concatenation
@@ -85,11 +85,11 @@ len('turtle') # 6
 ```
 ```python
 # String Formatting
-name1 = 'Andrei'
-name2 = 'Sunny'
-print(f'Hello there {name1} and {name2}')       # Hello there Andrei and Sunny - Newer way to do things as of python 3.6
-print('Hello there {}, {}'.format(name1, name2))# Hello there Andrei and Sunny
-print('Hello there %s and %s' %(name1, name2))  # Hello there Andrei and Sunny --> you can also use %d, %f, %r for integers, floats, string representations of objects respectively
+name1 = 'Rashmi'
+name2 = 'Niki'
+print(f'Hello there {name1} and {name2}')       # Hello there Rashmi and Niki - Newer way to do things as of python 3.6
+print('Hello there {}, {}'.format(name1, name2))# Hello there Rashmi and Niki
+print('Hello there %s and %s' %(name1, name2))  # Hello there Rashmi and Niki --> you can also use %d, %f, %r for integers, floats, string representations of objects respectively
 ```
 # Boolean
 True or False. Used in a lot of comparison and logical operations in Python
@@ -205,10 +205,10 @@ sum_of_elements = sum([1,2,3,4,5])                                 # 15
 element_sum = [sum(pair) for pair in zip([1,2,3],[4,5,6])]         # [5, 7, 9]
 sorted_by_second = sorted(['hi','you','man'], key=lambda el: el[1])# ['man', 'hi', 'you']
 sorted_by_key = sorted([
-                       {'name': 'Bina', 'age': 30},
-                       {'name':'Andy', 'age': 18},
-                       {'name': 'zoey', 'age': 55}],
-                       key=lambda el: (el['name']))# [{'name': 'Andy', 'age': 18}, {'name': 'Bina', 'age': 30}, {'name': 'zoey', 'age': 55}]
+                       {'name': 'Rash', 'age': 22},
+                       {'name':'chinmay', 'age': 25},
+                       {'name': 'Niki', 'age': 23}],
+                       key=lambda el: (el['name']))# [{'name': 'Rash', 'age': 22}, {'name': 'chinmay', 'age': 25}, {'name': 'Niki', 'age': 23}]
 ```
 ```python
 # Read line of a file into a list
@@ -218,13 +218,13 @@ with open("myfile.txt") as f:
 # Dictionaries
 Also known as mappings or hash tables. They are key value pairs that DO NOT retain order
 ```python
-my_dict = {'name': 'Andrei Neagoie', 'age': 30, 'magic_power': False}
-my_dict['name']                      # Andrei Neagoie
+my_dict = {'name': 'Rashmi Bhujbal', 'age': 22, 'magic_power': False}
+my_dict['name']                      # Rashmi Bhujbal
 len(my_dict)                         # 3
 list(my_dict.keys())                 # ['name', 'age', 'magic_power']
-list(my_dict.values())               # ['Andrei Neagoie', 30, False]
-list(my_dict.items())                # [('name', 'Andrei Neagoie'), ('age', 30), ('magic_power', False)]
-my_dict['favourite_snack'] = 'Grapes'# {'name': 'Andrei Neagoie', 'age': 30, 'magic_power': False, 'favourite_snack': 'Grapes'}
+list(my_dict.values())               # ['Rashmi Bhujbal', 22, False]
+list(my_dict.items())                # [('name', 'Rashmi Bhujbal'), ('age', 22), ('magic_power', False)]
+my_dict['favourite_snack'] = 'Grapes'# {'name': 'Rashmi Bhujbal', 'age': 22, 'magic_power': False, 'favourite_snack': 'Grapes'}
 my_dict.get('age')                   # 30 --> Returns None if key does not exist.
 my_dict.get('ages', 0 )              # 0 --> Returns default (2nd param) if key is not found
 
@@ -233,15 +233,15 @@ del my_dict['name']
 my_dict.pop('name', None)
 ```
 ```python
-my_dict.update({'cool': True})                                         # {'name': 'Andrei Neagoie', 'age': 30, 'magic_power': False, 'favourite_snack': 'Grapes', 'cool': True}
-{**my_dict, **{'cool': True} }                                         # {'name': 'Andrei Neagoie', 'age': 30, 'magic_power': False, 'favourite_snack': 'Grapes', 'cool': True}
-new_dict = dict([['name','Andrei'],['age',32],['magic_power',False]])  # Creates a dict from collection of key-value pairs.
-new_dict = dict(zip(['name','age','magic_power'],['Andrei',32, False]))# Creates a dict from two collections.
+my_dict.update({'cool': True})                                         # {'name': 'Rashmi Bhujbal', 'age': 23, 'magic_power': False, 'favourite_snack': 'Grapes', 'cool': True}
+{**my_dict, **{'cool': True} }                                         # {'name': 'Rashmi Bhujbal', 'age': 23, 'magic_power': False, 'favourite_snack': 'Grapes', 'cool': True}
+new_dict = dict([['name','Rashmi'],['age',23],['magic_power',False]])  # Creates a dict from collection of key-value pairs.
+new_dict = dict(zip(['name','age','magic_power'],['Rashmi',23, False]))# Creates a dict from two collections.
 new_dict = my_dict.pop('favourite_snack')                              # Removes item from dictionary.
 ```
 ```python
 # Dictionary Comprehension
-{key: value for key, value in new_dict.items() if key == 'age' or key == 'name'} # {'name': 'Andrei', 'age': 32} --> Filter dict by keys
+{key: value for key, value in new_dict.items() if key == 'age' or key == 'name'} # {'name': 'Rashmi', 'age': 23} --> Filter dict by keys
 ```
 # Tuples
 Like lists, but they are used for immutable thing (that don't change)
