@@ -3,12 +3,12 @@
 
 
 # Python's 2 main types for Numbers is int and float (or integers and floating point numbers)
-type(1)   #int  
-type(-10) #int
-type(0)   #int
-type(0.0) #float
-type(2.2) #float
-type(4E2) #float - 4*10 to the power of 2
+ type(1)   #int  
+ type(-10) #int
+ type(0)   #int
+ type(0.0) #float
+ type(2.2) #float
+ type(4E2) #float - 4*10 to the power of 2
 
 # Arithmetic
 10 + 3  # 13
