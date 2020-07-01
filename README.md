@@ -417,3 +417,15 @@ def get_counter():
         return i
     return out
 ```
+# Module/
+ ```python
+ if __name__ == '__main__': # Runs main() if file wasn't imported.
+    main()
+ ```
+ ```python
+import <module_name>
+from <module_name> import <function_name>
+import <module_name> as m
+from <module_name> import <function_name> as m_function
+from <module_name> import *
+ ```
