@@ -97,7 +97,7 @@ When assigning something to a variable using a =, the right side of the = is alw
 2
 >>>
 ```
-To do something to a variable (for example, to add something to it) we can also use +=, -=, *= and /= instead of +, -, * and /. The "advanced" %=, //= and **= also work.
+To do something to a variable (for example, to add something to it) we can also use +=, -=, *= and /= instead of +, -, * and /. The "advanced" %= also works
 ```python
 >>> a += 2          # a = a + 2
 >>> a -= 2          # a = a - 2
@@ -105,7 +105,7 @@ To do something to a variable (for example, to add something to it) we can also 
 >>> a /= 2          # a = a / 2
 >>>
 ```
-This is not limited to integers.
+This is not only limited to integers
 ```
 >>> a = 'hello'
 >>> a *= 3
