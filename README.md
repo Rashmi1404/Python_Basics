@@ -40,6 +40,80 @@
  pi = input("What is the value of pi?")
  pi = float(pi)
 ```
+# Variables
+Variables are easy to understand. They simply point to values.
+```python
+>>> a = 1   # create a variable called a that points to 1
+>>> b = 2   # create another variable
+>>> a       # get the value that the variable points to
+1
+>>> b
+2
+>>>
+
+```
+We can also change the value of a variable after setting it
+```python
+>>> a = 2    # make a point to 2 instead of 1
+>>> a
+2
+>>>
+```
+```python
+>>> a = 1
+>>> b = a  # this makes b point to 1, not a
+>>> a = 5
+>>> b      # b didn't change when a changed
+1
+>>>
+```
+Variable names are case-sensitive, like many other things in Python.
+```python
+>>> thing = 1
+>>> THING = 2
+>>> thIng = 3
+>>> thing
+1
+>>> THING
+2
+>>> thIng
+3
+>>>
+```
+There are also words that cannot be used as variable names because they have a special meaning. They are called keywords, and we can run help('keywords') to see the full list if we want to. We'll learn to use most of them later in this tutorial. Trying to use a keyword as a variable name causes a syntax error.
+```python
+>>> if = 123
+  File "<stdin>", line 1
+    if = 123
+       ^
+SyntaxError: invalid syntax
+>>>
+```
+When assigning something to a variable using a =, the right side of the = is always executed before the left side. This means that we can do something with a variable on the right side, then assign the result back to the same variable on the left side.
+```python
+>>> a = 1
+>>> a = a + 1
+>>> a
+2
+>>>
+```
+To do something to a variable (for example, to add something to it) we can also use +=, -=, *= and /= instead of +, -, * and /. The "advanced" %=, //= and **= also work.
+```python
+>>> a += 2          # a = a + 2
+>>> a -= 2          # a = a - 2
+>>> a *= 2          # a = a * 2
+>>> a /= 2          # a = a / 2
+>>>
+```
+This is not limited to integers.
+```
+>>> a = 'hello'
+>>> a *= 3
+>>> a += 'world'
+>>> a
+'hellohellohelloworld'
+>>>
+```
 # Strings
 strings in python as stored as sequences of letters in memory
 ```python
