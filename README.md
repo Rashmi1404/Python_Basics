@@ -1,9 +1,8 @@
 # Python_Basics
  You can learn complete basics of Python here
  
-```python
 # Python's 2 main types for Numbers is int and float (or integers and floating point numbers)
-
+```python
  type(1)   #int  
  type(-10) #int
  type(0)   #int
