@@ -1,5 +1,5 @@
 # Python_Basics
- You can complete basics of Python here
+ You can learn complete basics of Python here
 
 
 # Python's 2 main types for Numbers is int and float (or integers and floating point numbers)
